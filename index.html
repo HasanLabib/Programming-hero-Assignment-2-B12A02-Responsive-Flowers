@@ -4,11 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
   </head>
-  <body>
+  <body class="inter-font">
+    <!-- Navbar Section -->
     <header>
-      <nav></nav>
+      <div class="nav-container flex container">
+        <div class="image-container">
+          <a
+            href="./index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Home"
+            ><img
+              src="./assets/flower-market/logo@1x-1.png"
+              alt="Logo"
+              class="logo"
+              title="Website-LOGO"
+            />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul class="navbar-list flex">
+            <li class="navbar-list-item-1 font-bold max-sm:hidden">
+              <a
+                href="./index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                <!-- title="Home" -->
+                >Home</a
+              >
+            </li>
+            <li class="navbar-list-item-2 nav-color max-sm:hidden">Shop</li>
+            <li class="navbar-list-item-3 nav-color max-sm:hidden">
+              About us 
+            </li>
+            <li class="navbar-list-item-4">
+              <i class="fa-sharp fa-solid fa-cart-shopping"></i>Cart ($56)
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main></main>
     <footer></footer>
