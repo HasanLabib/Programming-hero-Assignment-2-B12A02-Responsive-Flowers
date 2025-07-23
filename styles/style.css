@@ -30,11 +30,15 @@
   padding-right: 9.375rem;
   padding-top: 1.875rem;
 }
+.description-color {
+  color: rgba(0, 0, 0, 0.5);
+}
 /* Navbar Section */
 .nav-container {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  margin-bottom: 7.15625rem;
 }
 .navbar-list {
   gap: 3rem;
@@ -45,13 +49,30 @@
 .navbar-list-item-1 a:hover {
   color: rgba(78, 72, 72, 0.726);
 }
+
+/* Navbar Section End  */
+
+/* Banner-Section */
+.Banner-Section {
+  margin-bottom: 7.5rem;
+}
+.banner-title span {
+  color: rgb(233, 90, 8);
+}
+.banner-description {
+  max-width: 35.625rem;
+  width: 100%;
+}
+/* Banner-Section End */
 /* Responsive Section */
 @media screen and (max-width: 40rem) {
   .container {
     max-width: 40rem;
     padding: 0.8125rem 1rem;
   }
+  /* Responsive Navbar Section */
   .image-container img {
     width: 50%;
   }
+  /*  Responsive Navbar Section End  */
 }
