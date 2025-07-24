@@ -1,5 +1,5 @@
 /* Shared Style */
-
+@import "tailwindcss";
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -12,7 +12,6 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
 }
 
 * {
@@ -56,7 +55,8 @@
 .Banner-Section {
   margin-bottom: 7.5rem;
 }
-.banner-title span {
+.banner-title span,
+.plant-title span {
   color: rgb(233, 90, 8);
 }
 .banner-description {
@@ -64,6 +64,46 @@
   width: 100%;
 }
 /* Banner-Section End */
+
+/* Our Plants Section */
+.plant-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 20px;
+  margin-bottom: 13.195rem;
+}
+.plant-card img {
+  object-fit: contain;
+  margin-bottom: 1.875rem;
+}
+.plant-title,
+.plant-description {
+  text-align: center;
+}
+.plant-title {
+  margin-bottom: 1rem;
+}
+.plant-description {
+  max-width: 55.5rem;
+  width: 100%;
+  margin-bottom: 3.0625rem;
+}
+.plant-card-title {
+  margin-bottom: 1.25rem;
+}
+.plant-usd {
+  margin-bottom: 1.875rem;
+}
+.add-to-cart {
+  padding: 1.625rem 3.125rem;
+  color: white;
+  background-color: rgb(233, 90, 8);
+  max-width: 16.875rem;
+  width: 100%;
+}
+.add-to-cart:hover {
+  background-color: rgba(233, 90, 8, 0.753);
+}
 /* Responsive Section */
 @media screen and (max-width: 40rem) {
   .container {
@@ -75,4 +115,23 @@
     width: 50%;
   }
   /*  Responsive Navbar Section End  */
+  /* Responsive our plant */
+  .plant-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90vw;
+    place-items: center;
+  }
+  .plant-card {
+    width: 42.5vw;
+  }
+  .plant-card p {
+    font-size: 1rem;
+  }
+  .add-to-cart {
+    font-size: 1rem;
+
+    /* max-width: 10.6875rem; */
+    max-width: inherit;
+  }
 }
+/*  */
