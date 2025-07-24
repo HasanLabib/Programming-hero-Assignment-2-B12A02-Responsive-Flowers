@@ -104,17 +104,58 @@
 .add-to-cart:hover {
   background-color: rgba(233, 90, 8, 0.753);
 }
+
+/*  Our Plants Section End  */
+
+/* Plants Lover Section */
+
+.plant-lover-list {
+  padding-left: 2.5rem;
+  color: rgba(0, 0, 0, 0.5);
+  /* padding-right: 40px; */
+}
+.plant-lover-list li,
+.plant-lover-title {
+  margin-bottom: 1.25rem;
+}
+.image-animate {
+  transform-origin: center center;
+  -webkit-animation: img-rotate 20s linear infinite;
+  animation: img-rotate 20s linear infinite;
+}
+
+@keyframes img-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* Plants Lover Section End */
 /* Responsive Section */
 @media screen and (max-width: 40rem) {
   .container {
     max-width: 40rem;
     padding: 0.8125rem 1rem;
   }
+
   /* Responsive Navbar Section */
   .image-container img {
     width: 50%;
   }
   /*  Responsive Navbar Section End  */
+
   /* Responsive our plant */
   .plant-container {
     grid-template-columns: repeat(2, 1fr);
@@ -133,5 +174,13 @@
     /* max-width: 10.6875rem; */
     max-width: inherit;
   }
+  /* Responsive our plant End */
+
+  /* Responsive Plants Lover Section */
+  .plant-lover-list {
+    padding-left: 1.25rem;
+    /* padding-right: 40px; */
+  }
+  /* Responsive Plants Lover Section End */
 }
 /*  */
