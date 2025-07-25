@@ -48,12 +48,30 @@
                 Home</a
               >
             </li>
-            <li class="navbar-list-item-2 nav-color max-sm:hidden">Shop</li>
+            <li class="navbar-list-item-2 nav-color max-sm:hidden">
+              <a
+                href="https://www.gentlepark.com/product-listing.php?productsmap=67c6a1e7ce56d3d6fa748ab6d9af3fd7"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Shop</a
+              >
+            </li>
             <li class="navbar-list-item-3 nav-color max-sm:hidden">
-              About us 
+              <a
+                href="https://about.x.com/en"
+                target="_blank"
+                rel="noopener noreferrer"
+                >About us </a
+              >
             </li>
             <li class="navbar-list-item-4">
-              <i class="fa-sharp fa-solid fa-cart-shopping"></i>Cart ($56)
+              <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+              <a
+                href="https://www.startech.com.bd/checkout/cart"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Cart ($56)</a
+              >
             </li>
           </ul>
         </nav>
@@ -313,36 +331,175 @@
       </section>
       <!--===== Latest Deal Section End =====-->
       <!-- Join Section -->
-      <section
-        class="join flex justify-center content-center items-center flex-col"
-      >
-        <h4
-          class="title noto-serif-font text-[3.125rem] max-sm:text-[1.25rem]"
-          style="color: white; font-weight: 700"
+      <section class="join flex justify-center content-center items-center">
+        <div
+          class="join-container flex flex-col justify-center content-center items-center"
         >
-          Join the colorful Bunch
-        </h4>
-        <div class="flex">
-          <label for="email" class="sr-only">Email address</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-            title="Email address"
-            class="bg-white"
-          />
-          <input
-            type="button"
-            value="Subscribe"
-            style="background-color: rgb(233, 90, 8); color: white"
-          />
+          <h4
+            class="title noto-serif-font text-[3.125rem] max-sm:text-[1.25rem]"
+            style="color: white; font-weight: 700"
+          >
+            Join the colorful Bunch
+          </h4>
+          <form class="flex">
+            <label for="email" class="sr-only">Email address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Enter your email"
+              title="Email address"
+              class="bg-white"
+            />
+            <input
+              type="button"
+              value="Subscribe"
+              class="email-button"
+              onclick="getUserEmail()"
+            />
+          </form>
         </div>
       </section>
       <!-- Join Section End -->
     </main>
     <footer>
-      
+      <div
+        class="footer-container container grid grid-cols-3 place-items-center max-sm:grid-cols-1 max-sm:place-items-start"
+      >
+        <div class="logo">
+          <a href="./index.html"
+            ><img
+              src="./assets/flower-market/logo@1x-1.png"
+              alt="logo"
+              class="footer-logo-img"
+          /></a>
+          <p class="footer-description text-[1.375rem] max-sm:hidden">
+            Indulge your senses with the <br />
+            beauty and fragrance of our fresh flower shop.
+          </p>
+          <p
+            class="footer-description text-[1.375rem] hidden max-sm:inline-block max-sm:text-[1rem]"
+          >
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop.
+          </p>
+        </div>
+        <div class="footer-links">
+          <ul class="grid grid-cols-2 gap-x-28 gap-y-8 max-sm:grid-cols-1">
+            <li>
+              <a href="./index.html" target="_blank" rel="no-referrer noopener"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://about.google/"
+                target="_blank"
+                rel="no-referrer noopener"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://dribbble.com/stories"
+                target="_blank"
+                rel="no-referrer noopener"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://support.kaspersky.com/learning/faq"
+                target="_blank"
+                rel="no-referrer noopener"
+                >FAQ</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.eset.com/us/about/contact/?srsltid=AfmBOooFcCFuqXID4LaAPRTBevRKckC8MxGOP6GMQZE9VdV21Xh_DVtl"
+                target="_blank"
+                rel="no-referrer noopener"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://help.eset.com/home_eset/en-US/products_features.html"
+                target="_blank"
+                rel="no-referrer noopener"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.bitdefender.com/en-us/consumer/antivirus#products"
+                target="_blank"
+                rel="no-referrer noopener"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/privacy/policy/version/5407378522724295/"
+                target="_blank"
+                rel="no-referrer noopener"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://x.com/en/tos"
+                target="_blank"
+                rel="no-referrer noopener"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://help.instagram.com/"
+                target="_blank"
+                rel="no-referrer noopener"
+                >Help Center</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-logo flex gap-6">
+          <a
+            href="http://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="./assets/icon-linkedin.png"
+              alt=""
+              class="footer-img-link1" /></a
+          ><a href="http://www.x.com" target="_blank" rel="noopener noreferrer"
+            ><img
+              src="./assets/icon-twitter.png"
+              alt=""
+              class="footer-img-link2"
+          /></a>
+          <a
+            href="http://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="./assets/icon-facebook.png"
+              alt=""
+              class="footer-img-link3" /></a
+          ><a
+            href="http://www.youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="./assets/icon-youtube.png"
+              alt=""
+              class="footer-img-link4"
+          /></a>
+        </div>
+      </div>
     </footer>
     <script src="./app.js"></script>
   </body>
