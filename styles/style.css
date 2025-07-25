@@ -133,7 +133,6 @@
     transform: rotate(0deg);
   }
   to {
-    
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -143,6 +142,83 @@
 }
 
 /* Plants Lover Section End */
+
+/* Latest Deals Section */
+.Latest-Deal-Section {
+  margin-bottom: 10rem;
+  text-align: center;
+}
+.latest-deals-img-container {
+  grid-template-columns: 0.25fr 0.75fr;
+  place-items: center;
+}
+.latest-deals-img-left {
+  position: relative;
+}
+.latest-deal-img-right-1 {
+}
+.latest-deal-img-left-1 {
+  position: relative;
+  color: white;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+}
+.latest-deal-img-left-1 img {
+  position: absolute;
+  justify-content: center;
+  align-self: center;
+  z-index: -1;
+}
+.latest-deal-img-left-2 {
+  position: relative;
+  color: white;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+}
+.latest-deal-img-left-2 img {
+  position: absolute;
+  justify-content: center;
+  align-self: center;
+  gap: 30px;
+  z-index: -2;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+/* Join Section */
+.join {
+  background-image: url("../assets/news-letter-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 33.3125rem;
+  width: 100%;
+  height: 100%;
+}
+.join h4 {
+  margin-bottom: 1.625rem;
+}
+input[type="email"] {
+  min-width: 40.25rem;
+  padding: 0.5rem 1.25rem;
+}
+input[type="button"] {
+  min-width: 11.625rem;
+  width: 100%;
+  padding: 1.625rem 3.125rem;
+}
+/* Join Section End */
 /* Responsive Section */
 @media screen and (max-width: 40rem) {
   .container {
@@ -155,7 +231,10 @@
     width: 50%;
   }
   /*  Responsive Navbar Section End  */
-
+  /* Responsive Banner */
+  .banner-img {
+    margin-bottom: 1.75rem;
+  }
   /* Responsive our plant */
   .plant-container {
     grid-template-columns: repeat(2, 1fr);
@@ -182,5 +261,21 @@
     /* padding-right: 40px; */
   }
   /* Responsive Plants Lover Section End */
+
+  /* Responsive Join */
+  .join {
+    min-width: 24.5625rem;
+    min-height: 275px;
+    background-size: cover;
+    object-fit: contain;
+  }
+  input[type="email"] {
+    min-width: 218px;
+  }
+  input[type="button"] {
+    min-width: 103px;
+    padding: 19px 12px;
+  }
+  /* Responsive Join End */
 }
 /*  */
