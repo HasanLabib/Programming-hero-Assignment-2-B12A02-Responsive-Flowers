@@ -11,6 +11,6 @@ function getUserEmail() {
       '"' +
       emailAddress +
       '"' +
-      " is added to our database. Thanks We will inform you about aur promotion preodically"
+      " is added to our database. Thanks We will inform you about aur promotion periodically"
   );
 }

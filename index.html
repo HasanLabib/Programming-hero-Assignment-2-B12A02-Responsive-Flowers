@@ -309,28 +309,58 @@
           shop. From classic roses to exotic blooms, we offer a wide variety of
           fresh.
         </p>
-        <div class="latest-deals-img-container grid">
-          <div class="latest-deals-img-left grid grid-rows-2">
-            <p class="latest-deal-img-left-1 flex">
-              60% Off | Bloom Plant <br />
-              <span>Shop Now</span>
-            </p>
+        <div class="latest-deals-img-container grid place-items-center gap-7">
+          <div class="latest-deals-img-left grid grid-rows-2 gap-y-6">
+            <div
+              class="relative latest-deal-img-left-1 bg-[url(./assets/deal-bloom.png)] text-white text-[20px] font-bold"
+            >
+              <div
+                class="absolute inset-0 bg-black rounded-[14px]"
+                style="opacity: 0.5"
+              ></div>
+              <div class="relative z-10 p-4">
+                60% Off | Bloom Plant <br />
+                <span
+                  class="text-[1rem] font-semibold"
+                  style="text-decoration: underline"
+                  >Shop Now</span
+                >
+              </div>
+            </div>
 
-            <p class="latest-deal-img-left-2 flex">
-              30% Off | Ana Plant <br />
-              <span>Shop Now</span>
-            </p>
+            <div
+              class="relative latest-deal-img-left-2 bg-[url(./assets/deal-ana.png)] text-white text-[20px] font-bold rounded-[14px] overflow-hidden"
+            >
+              <div class="absolute inset-0 bg-black" style="opacity: 0.5"></div>
+              <div class="relative z-10 p-4">
+                30% Off | Ana Plant <br />
+                <span
+                  class="text-[1rem] font-semibold"
+                  style="text-decoration: underline"
+                  >Shop Now</span
+                >
+              </div>
+            </div>
           </div>
           <div class="latest-deals-img-right">
-            <p class="latest-deal-img-right-1">
-              25% Off | Zabo Plant <br />
-              <span>Shop Now</span>
-            </p>
+            <div
+              class="relative latest-deal-img-right-1 bg-[url(./assets/deal-zabo.png)] text-white text-[40px] font-bold rounded-[14px] overflow-hidden max-sm:text-[20px]"
+            >
+              <div class="absolute inset-0 bg-black" style="opacity: 0.5"></div>
+              <div class="relative z-10 p-4">
+                25% Off | Zabo Plant <br />
+                <span
+                  class="text-[28px] font-semibold max-sm:text-[16px]"
+                  style="text-decoration: underline"
+                  >Shop Now</span
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <!--===== Latest Deal Section End =====-->
-      <!-- Join Section -->
+      <!--===== Join Section =====-->
       <section class="join flex justify-center content-center items-center">
         <div
           class="join-container flex flex-col justify-center content-center items-center"
@@ -361,8 +391,9 @@
           </form>
         </div>
       </section>
-      <!-- Join Section End -->
+      <!--===== Join Section End =====-->
     </main>
+    <!--===== Footer Section =====-->
     <footer>
       <div
         class="footer-container container grid grid-cols-3 place-items-center max-sm:grid-cols-1 max-sm:place-items-start"
@@ -374,12 +405,16 @@
               alt="logo"
               class="footer-logo-img"
           /></a>
-          <p class="footer-description text-[1.375rem] max-sm:hidden">
+          <p
+            class="footer-description text-[1.375rem] max-sm:hidden"
+            style="color: rgba(0, 0, 0, 0.5)"
+          >
             Indulge your senses with the <br />
             beauty and fragrance of our fresh flower shop.
           </p>
           <p
             class="footer-description text-[1.375rem] hidden max-sm:inline-block max-sm:text-[1rem]"
+            style="color: rgba(0, 0, 0, 0.5)"
           >
             Indulge your senses with the beauty and fragrance of our fresh
             flower shop.
@@ -501,6 +536,7 @@
         </div>
       </div>
     </footer>
+    <!--===== Footer Section End =====-->
     <script src="./app.js"></script>
   </body>
 </html>

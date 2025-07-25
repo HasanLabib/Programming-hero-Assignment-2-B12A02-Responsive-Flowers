@@ -32,6 +32,9 @@
 .description-color {
   color: rgba(0, 0, 0, 0.5);
 }
+a:hover {
+  color: rgba(62, 121, 172, 0.738);
+}
 /* Navbar Section */
 .nav-container {
   justify-content: space-between;
@@ -153,55 +156,65 @@
   margin-bottom: 10rem;
   text-align: center;
 }
+.lates-deals-title {
+  margin-bottom: 1rem;
+}
 .latest-deals-img-container {
-  grid-template-columns: 0.25fr 0.75fr;
+  grid-template-columns: 0.35fr 0.65fr;
+  margin-top: 121px;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
   place-items: center;
-} /*
-.latest-deals-img-left {
-  position: relative;
 }
-.latest-deal-img-right-1 {
-}
-.latest-deal-img-left-1 {
-  position: relative;
-  color: white;
-  flex-direction: column;
-  text-align: center;
-  align-self: center;
-  justify-content: center;
-}
-.latest-deal-img-left-1 img {
-  position: absolute;
-  justify-content: center;
-  align-self: center;
-  z-index: -1;
-}
+
+.latest-deal-img-left-1,
 .latest-deal-img-left-2 {
   position: relative;
-  color: white;
-  flex-direction: column;
-  text-align: center;
-  align-self: center;
-  justify-content: center;
-}
-.latest-deal-img-left-2 img {
-  position: absolute;
-  justify-content: center;
-  align-self: center;
-  gap: 30px;
-  z-index: -2;
-} */
-/* .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+  min-width: 22.9375rem;
+  min-height: 12.5625rem;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.55);
-  align-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   justify-content: center;
-  text-align: center; 
-}*/
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  place-items: center;
+  border: none;
+
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  border-radius: 14px;
+}
+.latest-deal-img-right-1 {
+  position: relative;
+  min-width: 47.0625rem;
+  min-height: 26.445625rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  place-items: center;
+  border: none;
+
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  -ms-border-radius: 22px;
+  -o-border-radius: 22px;
+  border-radius: 22px;
+}
+/* Latest Deals Section End */
+
 /* Join Section */
 .join {
   background-image: url("../assets/news-letter-bg.png");
@@ -310,6 +323,17 @@ input[type="button"] {
     /* padding-right: 40px; */
   }
   /* Responsive Plants Lover Section End */
+  /* Latest deals */
+
+  .latest-deals-img-container {
+    grid-template-columns: 1fr;
+  }
+  .latest-deal-img-left-1,
+  .latest-deal-img-left-2,
+  .latest-deal-img-right-1 {
+    min-width: 22.5625rem;
+    min-height: 11.53125rem;
+  }
 
   /* Responsive Join */
   .join-container {
